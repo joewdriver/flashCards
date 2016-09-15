@@ -3,6 +3,8 @@ package com.example.joewd_000.flashcards;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class FlashCards extends AppCompatActivity {
@@ -10,6 +12,8 @@ public class FlashCards extends AppCompatActivity {
     String filter = "filter";
     TextView txtNumber1;
     TextView txtNumber2;
+    EditText txtboxAnswer;
+    Button btnSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,8 @@ public class FlashCards extends AppCompatActivity {
 
         txtNumber1 = (TextView)findViewById(R.id.txtNumber1);
         txtNumber2 = (TextView)findViewById(R.id.txtNumber2);
+        txtboxAnswer = (EditText)findViewById(R.id.txtboxAnswer);
+        btnSubmit = (Button)findViewById(R.id.btnSubmit);
     }
 
     @Override
