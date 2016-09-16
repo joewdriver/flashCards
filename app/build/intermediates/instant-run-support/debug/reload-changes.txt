@@ -1,0 +1,2 @@
+CHANGED,C:\Users\joewd_000\AndroidStudioProjects\FlashCards\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\joewd_000\flashcards\FlashCards$override.class
+CHANGED,C:\Users\joewd_000\AndroidStudioProjects\FlashCards\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

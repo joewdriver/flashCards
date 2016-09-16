@@ -56,12 +56,12 @@
         "source": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
         "merged": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.0\\res\\drawable\\abc_vector_test.xml"
     },
     {
         "merged": "C:\\Users\\joewd_000\\AndroidStudioProjects\\FlashCards\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
