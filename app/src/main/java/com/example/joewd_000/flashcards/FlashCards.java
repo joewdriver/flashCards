@@ -26,19 +26,27 @@ public class FlashCards extends AppCompatActivity {
     private int count = 0;
     private int score = 0;
 
-    private void checkAnswer() {
-        int answer = -1000;
+    private boolean checkAnswer() {
+        // value is meaningless, will be overridden
+        int answer = 0;
+        //check for illegal inputs
         try {
             answer = Integer.valueOf(txtboxAnswer.getText().toString());
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(),
                     "Invalid submission, please use integers only", Toast.LENGTH_LONG).show();
+            return false;
         }
+        //verify and score
         if(answer == correctAnswer) {
             score++;
         }
+        return true;
     }
 
+    /**
+     * gets next card based on preset operator radio and updates the correct answer
+     */
     private void nextCard() {
         num1 = rand.nextInt(10);
         num2 = rand.nextInt(10);
@@ -51,10 +59,6 @@ public class FlashCards extends AppCompatActivity {
         }
         txtNumber1.setText("" + Math.max(num1, num2));
         txtNumber2.setText("" + Math.min(num1, num2));
-    }
-
-    private void reset() {
-
     }
 
     @Override
@@ -77,14 +81,14 @@ public class FlashCards extends AppCompatActivity {
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                checkAnswer();
-                count++;
-                if(count >= 10) {
-                    Toast.makeText(getApplicationContext(), "Your score is " + score + " out of 10",
-                            Toast.LENGTH_LONG).show();
-                    reset();
-                } else {
-                    nextCard();
+                if(checkAnswer()) {
+                    count++;
+                    if (count >= 10) {
+                        Toast.makeText(getApplicationContext(), "Your score is " + score + " out of 10",
+                                Toast.LENGTH_LONG).show();
+                    } else {
+                        nextCard();
+                    }
                 }
             }
         });
