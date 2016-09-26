@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Authenticating", Toast.LENGTH_SHORT).show();
                 Log.i(filter, "checkpoint1");
-                if(txtPassword.getText().equals("iam") && txtUsername.getText().equals("sam")) {
+                if(txtPassword.getText().toString().equals("iam") && txtUsername.getText().toString().equals("sam")) {
                     Intent i = new Intent(MainActivity.this, FlashCards.class);
                     Log.i(filter, "checkpoint2");
                     startActivity(i);
                 } else {
                     Intent i = new Intent(MainActivity.this, FlashCards.class);
                     Log.i(filter, "checkpoint3");
-                    startActivity(i);
+//                    startActivity(i);
                 }
             }
         });

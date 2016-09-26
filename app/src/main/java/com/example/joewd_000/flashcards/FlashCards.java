@@ -51,6 +51,8 @@ public class FlashCards extends AppCompatActivity {
      * gets next card based on preset operator radio and updates the correct answer
      */
     private void nextCard() {
+        txtboxAnswer = (EditText)findViewById(R.id.txtboxAnswer);
+        txtboxAnswer.setText("");
         num1 = rand.nextInt(10);
         num2 = rand.nextInt(10);
         if(radioMinus.isChecked()) {
@@ -65,7 +67,7 @@ public class FlashCards extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         Log.i(filter, "create");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash_cards);
@@ -89,6 +91,8 @@ public class FlashCards extends AppCompatActivity {
                     if (count >= 10) {
                         Toast.makeText(getApplicationContext(), "Your score is " + score + " out of 10",
                                 Toast.LENGTH_LONG).show();
+                        onDestroy();
+                        onCreate(savedInstanceState);
                     } else {
                         nextCard();
                     }
