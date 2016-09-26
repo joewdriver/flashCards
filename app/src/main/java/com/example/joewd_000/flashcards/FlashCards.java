@@ -39,7 +39,10 @@ public class FlashCards extends AppCompatActivity {
         }
         //verify and score
         if(answer == correctAnswer) {
+            Toast.makeText(getApplicationContext(), "CORRECT", Toast.LENGTH_SHORT).show();
             score++;
+        } else {
+            Toast.makeText(getApplicationContext(), "WRONG!", Toast.LENGTH_SHORT).show();
         }
         return true;
     }
